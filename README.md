@@ -1,13 +1,39 @@
-# Sample Hardhat Project
+# ERC Factory
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+ERC Create Factory Contract
 
-Try running some of the following tasks:
+## Setup
 
-```shell
-npx hardhat help
+```
+PRIVATE_KEY=
+ETHERSCAN_KEY=
+DEV_ALCHEMY_KEY=
+PROD_ALCHEMY_KEY=
+```
+
+## Get Started
+
+```
+npx hardhat run scripts/deploy.ts --network main
+npx hardhat run scripts/deploy.ts --network goerli
+```
+
+## Get Test
+
+```
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```
+
+## Get Verify
+
+```
+npx compile
+npx hardhat verify --network main ${contract address}
+npx hardhat verify --network goerli ${contract address}
+```
+
+## Contract Address
+
+```
+
 ```
